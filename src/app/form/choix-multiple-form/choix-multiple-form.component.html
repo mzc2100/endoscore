@@ -1,0 +1,27 @@
+<div class="choix-multiple-div">
+
+  <div *ngIf="survey">
+    <div *ngFor="let question of survey.questionChoixMultiple; let i = index">
+      <div *ngIf="(i == this.getCurrentQuestionIndexMultipleChoix()) && question">
+        <h3>{{ question.libelle }}</h3>
+        <mat-selection-list [(ngModel)]="selectedOptions[i]" [compareWith]="compareFunction">
+          <mat-list-option
+            (click)="onOptionSelected(proposition, i)"
+            *ngFor="let proposition of question.propositions"
+            [value]="proposition">
+            {{ proposition.name }}
+          </mat-list-option>
+        </mat-selection-list>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-nav">
+    <button (click)="goToPreviousQuestion()" [disabled]="currentQuestionIndex === 0" class="previousButton"
+            type="button">
+      Précédent
+    </button>
+    <button (click)="goToNextQuestion()" class="nextButton" type="button">Suivant</button>
+  </div>
+
+</div>

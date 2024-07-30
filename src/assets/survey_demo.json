@@ -1,0 +1,107 @@
+{
+  "questionChoixMultiple": [
+    {
+      "index": 2,
+      "sectionName": "Préambule profils des répondantes",
+      "libelle": "1 - Voici ci-dessous des symptômes liés à l’endométriose. Au cours des 6 derniers mois, lesquels je pense avoir ressenti ? ",
+      "propositions": [
+        {
+          "name": "Douleurs durant les menstruations",
+          "id": 1
+        },
+        {
+          "name": "Rapport intime difficile",
+          "id": 2
+        },
+        {
+          "name": "Douleurs lombaires",
+          "id": 3
+        },
+        {
+          "name": "Troubles urinaires",
+          "id": 4
+        },
+        {
+          "name": "Maladies digestives",
+          "id": 5
+        },
+        {
+          "name": "Difficultés de procréation",
+          "id": 5
+        },
+        {
+          "name": "Aucun",
+          "id": 6
+        }
+      ],
+      "reponses": null
+    }
+  ],
+  "questionDependante": [
+    {
+      "index": 1,
+      "sectionName": "Préambule profils des répondantes",
+      "libelle": "2 - J’ai été diagnostiquée de l’endométriose ?",
+      "propositionDependante": [
+        {
+          "proposition": "oui",
+          "questionsLies": [
+            {
+              "question": "Depuis combien de temps ?",
+              "reponse": ""
+            }
+          ]
+        },
+        {
+          "proposition": "non",
+          "questionsLies": []
+        }
+      ],
+      "reponse": null
+    }
+  ],
+  "questionCorp": [
+    {
+      "index": 0,
+      "sectionName": "Sensori-descriptive",
+      "libelle": "10 - Sur le schéma ci-contre pouvez-vous appuyer sur les zones du corps où vous souffrez.",
+      "reponse": ""
+    }
+  ],
+  "questionRange": [
+    {
+      "index": 4,
+      "sectionName": "Préambule profils des répondantes",
+      "libelle": "5 - Si je n'ai pas été diagnostiqué, depuis combien de temps je souffre de symptômes proches de l’endométriose ?",
+      "min": 0,
+      "max": 7,
+      "step": 1,
+      "labels": [
+        {
+          "label": "0 an",
+          "value": 0
+        },
+        {
+          "label": "+7 ans",
+          "value": 7
+        }
+      ],
+      "reponseMin": 0,
+      "reponseMax": 0
+    },
+    {
+      "index": 3,
+      "sectionName": "Sensori-descriptive",
+      "libelle": "12 - Comment évaluerais-je la pire douleur ressentie au quotidien ?",
+      "min": -1,
+      "max": 10,
+      "step": 1,
+      "labels": [],
+      "reponseMin": 0,
+      "reponseMax": 0
+    }
+  ],
+  "questionUnique": [],
+  "questionBinaire": [],
+  "questionValeurParDefaut": []
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "code": "01",
+    "nom": "Auvergne-Rhône-Alpes"
+  },
+  {
+    "code": "02",
+    "nom": "Bourgogne-Franche-Comté"
+  },
+  {
+    "code": "03",
+    "nom": "Bretagne"
+  },
+  {
+    "code": "04",
+    "nom": "Centre-Val de Loire"
+  },
+  {
+    "code": "05",
+    "nom": "Corse"
+  },
+  {
+    "code": "06",
+    "nom": "Grand Est"
+  },
+  {
+    "code": "07",
+    "nom": "Hauts-de-France"
+  },
+  {
+    "code": "08",
+    "nom": "Île-de-France"
+  },
+  {
+    "code": "09",
+    "nom": "Normandie"
+  },
+  {
+    "code": "10",
+    "nom": "Nouvelle-Aquitaine"
+  },
+  {
+    "code": "11",
+    "nom": "Occitanie"
+  },
+  {
+    "code": "12",
+    "nom": "Pays de la Loire"
+  },
+  {
+    "code": "13",
+    "nom": "Provence-Alpes-Côte d'Azur"
+  }
+]

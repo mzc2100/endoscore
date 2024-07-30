@@ -1,0 +1,53 @@
+ul {
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+form {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+li {
+  margin-right: 2vw; /* Réduire l'espace à droite de chaque élément */
+  padding: 8px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+li:hover {
+  background-color: rgba(253, 88, 50, 0.42);
+}
+
+.selected {
+  background-color: rgba(253, 88, 50, 0.42);
+}
+
+/* Cacher le bouton radio par défaut */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+label {
+  padding-left: 0.25vw;
+  padding-right: 0.25vw;
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+.div-valueDefault-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}

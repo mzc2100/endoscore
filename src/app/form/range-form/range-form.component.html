@@ -1,0 +1,60 @@
+<div class="range-div">
+  <mat-card>
+    <form *ngIf="this.survey?.questionRange">
+      <div *ngIf="currentQuestionIndex >= 0 && survey.questionRange[getCurrentQuestionIndexRange()]">
+        <h3>{{ survey.questionRange[getCurrentQuestionIndexRange()].libelle }}</h3>
+
+        <!-- Mode 2 curseur -->
+        <div *ngIf="!(survey.questionRange[getCurrentQuestionIndexRange()].min==-1)" class="rangefields">
+          <mat-slider
+            (input)="handleSliderChange($event)"
+            [max]="survey.questionRange[getCurrentQuestionIndexRange()].max"
+            [min]="survey.questionRange[getCurrentQuestionIndexRange()].min"
+            [step]="survey.questionRange[getCurrentQuestionIndexRange()].step"
+            discrete
+            showTickMarks>
+            <input [(ngModel)]="survey.questionRange[getCurrentQuestionIndexRange()].reponseMin" list="labels-input-2"
+                   matSliderStartThumb
+                   name="reponseMin">
+            <input [(ngModel)]="survey.questionRange[getCurrentQuestionIndexRange()].reponseMax" matSliderEndThumb
+                   name="reponseMax">
+            <datalist class="labels-input" id="labels-input-2">
+              <option *ngFor="let label of survey.questionRange[getCurrentQuestionIndexRange()].labels"
+                      [label]="label.label" [value]="label.value"></option>
+            </datalist>
+          </mat-slider>
+          <span>Réponse: </span>
+          <span>{{survey.questionRange[getCurrentQuestionIndexRange()].reponseMin ? survey.questionRange[getCurrentQuestionIndexRange()].reponseMin : 0}}
+            -
+            {{survey.questionRange[getCurrentQuestionIndexRange()].reponseMax ? survey.questionRange[getCurrentQuestionIndexRange()].reponseMax : 0}}
+        </span>
+        </div>
+
+
+        <!-- Mode 1 curseur -->
+        <div *ngIf="(survey.questionRange[getCurrentQuestionIndexRange()].min==-1)" class="rangefields">
+          <mat-slider (input)="handleSliderChange($event)"
+                      [max]="survey.questionRange[getCurrentQuestionIndexRange()].max"
+                      [step]="survey.questionRange[getCurrentQuestionIndexRange()].step"
+                      discrete
+                      showTickMarks>
+
+            <input [(ngModel)]="survey.questionRange[getCurrentQuestionIndexRange()].reponseMax" list="labels-input"
+                   matSliderThumb name="reponse">
+            <datalist class="labels-input" id="labels-input">
+              <option *ngFor="let label of survey.questionRange[getCurrentQuestionIndexRange()].labels"
+                      [label]="label.label" [value]="label.value"></option>
+            </datalist>
+          </mat-slider>
+          <span>Reponse: {{survey.questionRange[getCurrentQuestionIndexRange()].reponseMax}}</span>
+        </div>
+      </div>
+
+      <div class="button-nav">
+        <button (click)="goToPreviousQuestion()" class="previousButton" type="button">Précédent</button>
+        <button (click)="goToNextQuestion()" class="nextButton" type="button">Suivant</button>
+      </div>
+    </form>
+  </mat-card>
+
+</div>

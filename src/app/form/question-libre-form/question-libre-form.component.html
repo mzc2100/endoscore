@@ -1,0 +1,35 @@
+<div class="libre-div">
+  <form>
+    <div *ngIf="currentQuestionIndex >= 0">
+      <h3>{{ survey.questionLibre[getCurrentQuestionIndexLibre()].libelle }}</h3>
+      <ul>
+        <li *ngFor="let propositionLibreDep of survey.questionLibre[getCurrentQuestionIndexLibre()].propositionLibre">
+          <label
+            [ngClass]="{'selected': propositionLibreDep.proposition === survey.questionLibre[getCurrentQuestionIndexLibre()].reponse?.proposition}"
+            class="label-choix">
+            <input (change)="onOptionsSelected()"
+                   [(ngModel)]="survey.questionLibre[getCurrentQuestionIndexLibre()].reponse"
+                   [value]="propositionLibreDep"
+                   name="propositionLibreDep"
+                   type="radio">
+            {{ propositionLibreDep.proposition }}
+          </label>
+          <div
+            *ngIf="propositionLibreDep.proposition === survey.questionLibre[getCurrentQuestionIndexLibre()].reponse?.proposition">
+            <div *ngIf="propositionLibreDep.questionLibreLiee" class="div-question-lies">
+              <label>{{ propositionLibreDep.questionLibreLiee.question }}</label>
+              <input [(ngModel)]="propositionLibreDep.questionLibreLiee.reponse" name="question" type="text">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="button-nav">
+      <button (click)="goToPreviousQuestion()" class="previousButton" type="button">Précédent</button>
+      <button (click)="goToNextQuestion()" class="nextButton" type="button">Suivant</button>
+    </div>
+  </form>
+
+</div>
+

@@ -1,0 +1,65 @@
+ul {
+  list-style: none;
+  margin-top: 2vh;
+}
+
+.label-choix {
+  list-style: none;
+  margin-bottom: 2vh;
+  padding: 8px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.label-choix:hover{
+  background-color: rgba(253, 88, 50, 0.42);
+}
+
+
+label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  opacity: 0; /* Rendre le bouton radio invisible */
+  position: absolute;
+}
+
+
+.selected{
+  background-color: rgba(253, 88, 50, 0.42);
+}
+
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.input-question-lies {
+  margin-bottom: 2vh;
+}
+
+
+.div-question-lies{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  & input {
+    width: unset !important;
+  }
+}
+

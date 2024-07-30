@@ -1,0 +1,140 @@
+
+.title {
+  text-align: center;
+}
+
+.title img {
+  margin-top: 8vh;
+  width: 50vw;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.slider mat-slide-toggle{
+  font-style:italic;
+}
+
+.mode-text{
+  color: #FA7254;
+}
+
+.intro p{
+  display: flex;
+  justify-content: stretch;
+  text-align: justify;
+  margin-top: 10vh;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+h2 {
+  font-family: var(--police-primaire) !important;
+  font-weight: 400;
+}
+
+h3 {
+  margin-top: 10vh;
+  font-family: var(--police-secondaire);
+  font-weight: 600;
+  margin-bottom: 5vh;
+}
+
+.estimate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 15vh;
+}
+
+.estimate p {
+  font-family: var(--police-secondaire);
+
+  text-align: center;
+}
+
+.estimate mat-icon {
+  margin-top: -0.75vh;
+  margin-right: 0.25vw;
+}
+
+
+a {
+  margin-top: 8vh;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 15px 40px;
+  border: 3px solid #FA7254;
+  border-radius: 5px;
+  background-color: #FA7254;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a:hover {
+  box-shadow: 3px 2px rgb(201, 48, 8);
+}
+
+@media screen and (max-width: 600px) {
+  .title img {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: 0 !important;
+    top: 5vh;
+    margin-top: 5vh;
+    width: 95vw;
+  }
+
+
+  .estimate p {
+    font-size: 4.5vw;
+    width: 80%
+  }
+
+  a {
+    margin-top: 6vh;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 15px 40px;
+    border: 3px solid #FA7254;
+    border-radius: 5px;
+
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .estimate mat-icon {
+    margin-top: -2.8vh;
+    margin-right: 0.25vw;
+  }
+
+  .example-h2 {
+    margin: 10px;
+  }
+  
+  .example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .example-margin {
+    margin: 10px;
+  }
+}

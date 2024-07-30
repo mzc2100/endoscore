@@ -1,0 +1,33 @@
+.human-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.human-body svg:hover {
+  cursor: pointer;
+}
+
+.human-body svg path:hover {
+  fill: var(--primary-color);
+}
+
+.human-body svg path.selected {
+  fill: var(--primary-color);
+}
+
+
+#app {
+  text-align: center;
+}
+
+.span-svg-body{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 48px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}

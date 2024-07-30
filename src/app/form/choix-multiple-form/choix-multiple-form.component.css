@@ -1,0 +1,21 @@
+.mdc-list-item {
+  border: 2px solid var(--primary-color) !important;
+  margin: 5px !important;
+}
+
+.mdc-list-item:hover {
+  background-color: #FA7254;
+}
+
+
+.mat-mdc-list-option .mdc-checkbox__background {
+  background-color: var(--primary-color) !important;
+}
+
+.mdc-list-item:hover {
+  background-color: #e156564a !important;
+}
+
+.mdc-list-item__primary-text {
+  color: rgba(107, 18, 18, 0.87) !important;
+}

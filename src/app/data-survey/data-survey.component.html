@@ -1,0 +1,103 @@
+<div class="dataSurvey">
+
+  <ul>
+    <li>
+      <a class="home-link" routerLink="/home" routerLinkActive="active">
+        <mat-icon>home</mat-icon>
+      </a>
+    </li>
+  </ul>
+
+  <div class="container-form">
+    <div class="progress-bar">
+      <header>
+        {{questionPercentage(survey, currentQuestionIndex)}} % - {{this.getTitle()}}
+        <mat-progress-bar [value]="questionPercentage(survey,currentQuestionIndex)"
+                          mode="determinate"></mat-progress-bar>
+      </header>
+    </div>
+
+    <div class="form">
+      <form>
+        <div *ngIf="typeQuestion === 'questionUnique' ">
+          <mat-card>
+            <app-unique-form
+              (currentQuestionIndexChange)="updateQuestionIndexAndType($event)"
+              [currentQuestionIndex]="currentQuestionIndex"
+              [survey]="survey"
+            ></app-unique-form>
+          </mat-card>
+        </div>
+        <div *ngIf="typeQuestion === 'questionDependante' ">
+          <mat-card>
+            <app-dependent-form
+              (currentQuestionIndexChange)="updateQuestionIndexAndType($event)"
+              [currentQuestionIndex]="currentQuestionIndex"
+              [survey]="survey"
+            ></app-dependent-form>
+          </mat-card>
+        </div>
+        <div *ngIf="typeQuestion === 'questionLibre' ">
+          <app-question-libre-form
+            (currentQuestionIndexChange)="updateQuestionIndexAndType($event)"
+            [currentQuestionIndex]="currentQuestionIndex"
+            [survey]="survey"
+          ></app-question-libre-form>
+        </div>
+        <div *ngIf="typeQuestion === 'questionValeurParDefaut' ">
+          <app-valeur-par-defaut-form
+            (currentQuestionIndexChange)="updateQuestionIndexAndType($event)"
+            [currentQuestionIndex]="currentQuestionIndex"
+            [survey]="survey"
+          ></app-valeur-par-defaut-form>
+        </div>
+
+        <div *ngIf="typeQuestion === 'questionBinaire' ">
+          <mat-card>
+            <app-question-binaire-form
+              (currentQuestionIndexChange)="updateQuestionIndexAndType($event)"
+              [currentQuestionIndex]="currentQuestionIndex"
+              [survey]="survey"
+            ></app-question-binaire-form>
+          </mat-card>
+        </div>
+        <div *ngIf="typeQuestion === 'questionChoixMultiple' ">
+          <mat-card>
+            <app-choix-multiple-form
+              (currentQuestionIndexChange)="updateQuestionIndexAndType($event)"
+              [currentQuestionIndex]="currentQuestionIndex"
+              [survey]="survey"
+            ></app-choix-multiple-form>
+          </mat-card>
+        </div>
+        <div *ngIf="typeQuestion === 'questionCorp' ">
+          <mat-card>
+            <app-corphumain-form
+              (currentQuestionIndexChange)="updateQuestionIndexAndType($event)"
+              [currentQuestionIndex]="currentQuestionIndex"
+              [survey]="survey"
+            ></app-corphumain-form>
+          </mat-card>
+        </div>
+        <div *ngIf="typeQuestion === 'questionRange' ">
+          <mat-card>
+            <app-range-form
+              (currentQuestionIndexChange)="updateQuestionIndexAndType($event)"
+              [currentQuestionIndex]="currentQuestionIndex"
+              [survey]="survey"
+            ></app-range-form>
+          </mat-card>
+        </div>
+        <div *ngIf="typeQuestion === 'result' ">
+          <mat-card>
+            <app-result
+              [currentQuestionIndex]="currentQuestionIndex">
+            </app-result>
+          </mat-card>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+</div>

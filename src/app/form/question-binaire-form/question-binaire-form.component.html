@@ -1,0 +1,32 @@
+<div class="bianire-div">
+  <form>
+    <div *ngIf="currentQuestionIndex >= 0 && survey">
+      <h3>{{ survey.questionBinaire[getCurrentQuestionIndexBinaire()].libelle }}</h3>
+      <ul class="choices-list">
+        <li
+          (click)="this.selectChoice(survey.questionBinaire[getCurrentQuestionIndexBinaire()].propositionBinaire.choix1)"
+          [ngClass]="{ 'selected': survey.questionBinaire[getCurrentQuestionIndexBinaire()].reponse === survey.questionBinaire[getCurrentQuestionIndexBinaire()].propositionBinaire.choix1 }">
+          <input [(ngModel)]="survey.questionBinaire[getCurrentQuestionIndexBinaire()].reponse"
+                 [value]="survey.questionBinaire[getCurrentQuestionIndexBinaire()].propositionBinaire.choix1"
+                 name="propositionBinaire"
+                 type="radio">
+          {{survey.questionBinaire[getCurrentQuestionIndexBinaire()].propositionBinaire.choix1 }}
+        </li>
+        <li
+          (click)="this.selectChoice(survey.questionBinaire[getCurrentQuestionIndexBinaire()].propositionBinaire.choix2)"
+          [ngClass]="{ 'selected': survey.questionBinaire[getCurrentQuestionIndexBinaire()].reponse === survey.questionBinaire[getCurrentQuestionIndexBinaire()].propositionBinaire.choix2 }">
+          <input [(ngModel)]="survey.questionBinaire[getCurrentQuestionIndexBinaire()].reponse"
+                 [value]="survey.questionBinaire[getCurrentQuestionIndexBinaire()].propositionBinaire.choix2"
+                 name="propositionBinaire"
+                 type="radio">
+          {{survey.questionBinaire[getCurrentQuestionIndexBinaire()].propositionBinaire.choix2 }}
+        </li>
+      </ul>
+    </div>
+  </form>
+
+  <div class="button-nav">
+    <button (click)="goToPreviousQuestion()" class="previousButton" type="button">Précédent</button>
+    <button (click)="goToNextQuestion()" class="nextButton" type="button">Suivant</button>
+  </div>
+</div>

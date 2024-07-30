@@ -1,0 +1,136 @@
+canvas {
+  text-align: center;
+  margin-top: 2vh;
+  width: 47vw !important;
+  height: 37vw !important;
+}
+
+ul {
+  margin: 2vh;
+}
+
+ul li p #address{
+  margin-top: 5px;
+}
+
+ul li p #comments{
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: stretch;
+}
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.chart-result {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-top: 10px;
+}
+
+
+.chart-result ul {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.left-align {
+  text-align: left;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.chart-result {
+  animation: fade 1s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.not-empty-select.mat-selected {
+  color: green !important;
+}
+
+:host /deep/ .mat-select-value-text {
+  color: green !important;
+}
+
+
+.mat-mdc-form-field {
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  color: white;
+}
+
+mat-form-field.mat-form-field {
+  color: white;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: black;
+}
+
+
+.annuaire {
+  & ul {
+    list-style: none;
+  }
+}
+
+
+.tooltip {
+  padding: 10px;
+  background-color: #FFF0CA;
+}
+
+.recommendation {
+  padding-top: 10px;
+}
+
+/* Style pour le disclaimer */
+.disclaimer {
+  padding: 10px;
+  background-color: rgba(250, 114, 84, 0.16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.warning-icon {
+  color: #FFA500; /* Couleur orange pour l'icône warning */
+  margin-right: 10px;
+}

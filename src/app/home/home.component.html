@@ -1,0 +1,29 @@
+<div class="home">
+  <div class="title">
+    <img alt="title" class="logo" src="../../assets/image/endoscore.png" />
+    <h3>Questionnaire de pré-diagnostique</h3>
+  </div>
+
+  <div class="intro">
+    <p>
+      Ce questionnaire vise à mieux comprendre les impacts psychologiques de l'endométriose, une maladie affectant plus d'une femme sur dix dans le monde, souvent associée à des douleurs invalidantes et à l'infertilité. En étudiant les dimensions du quotidien et de la douleur chez les personnes touchées, l'objectif est d'améliorer la prise en charge de cette condition.
+    </p>
+  </div>
+
+  <div class="slider">
+    <mat-slide-toggle color="warn" [(ngModel)]="toggleState" (ngModelChange)="onToggleChange($event)">
+      <div class="mode-text"> {{ textMode  }}</div>
+    </mat-slide-toggle>
+  </div>
+  
+  <div class="start">
+    <a routerLink="/survey" routerLinkActive="active">Je commence</a>
+  </div>
+
+  <div class="estimate">
+    <mat-icon>access_time</mat-icon>
+    <p>Temps estimé du questionnaire est de d’environ 10 min</p>
+  </div>
+
+  
+</div>

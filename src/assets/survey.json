@@ -1,0 +1,924 @@
+{
+  "questionChoixMultiple": [
+    {
+      "index": 9,
+      "sectionName": "Préambule profils des répondantes",
+      "libelle": "1 - Voici ci-dessous des symptômes liés à l’endométriose. Au cours des 6 derniers mois, lesquels je pense avoir ressenti ? ",
+      "propositions": [
+        {
+          "name": "Douleurs durant les menstruations",
+          "id": 1
+        },
+        {
+          "name": "Rapport intime difficile",
+          "id": 2
+        },
+        {
+          "name": "Douleurs lombaires",
+          "id": 3
+        },
+        {
+          "name": "Troubles urinaires",
+          "id": 4
+        },
+        {
+          "name": "Maladies digestives",
+          "id": 5
+        },
+        {
+          "name": "Difficultés de procréation",
+          "id": 5
+        },
+        {
+          "name": "Aucun",
+          "id": 6
+        }
+      ],
+      "reponses": null
+    },
+    {
+      "index": 7,
+      "sectionName": "Sensori-descriptive",
+      "libelle": "8 - En termes de durée, je dirais que les douleurs ressenties sont …",
+      "propositions": [
+        {
+          "name": "Absentes",
+          "id": 1
+        },
+        {
+          "name": "Vont et viennent avec le temps",
+          "id": 2
+        },
+        {
+          "name": "Soudaines",
+          "id": 3
+        },
+        {
+          "name": "Lancinantes",
+          "id": 4
+        },
+        {
+          "name": "Continues",
+          "id": 5
+        }
+      ],
+      "reponses": null
+    },
+    {
+      "index": 14,
+      "sectionName": "Sensori-descriptive",
+      "libelle": "15 - Concernant les rapports sexuels, durant le dernier mois j’ai souffert de …",
+      "propositions": [
+        {
+          "name": "Je n’ai pas eu de rapports",
+          "id": 1
+        },
+        {
+          "name": "Pas de douleurs",
+          "id": 2
+        },
+        {
+          "name": "Douleurs durant les rapports",
+          "id": 3
+        },
+        {
+          "name": "Douleurs dans certaines positions",
+          "id": 4
+        },
+        {
+          "name": "Douleur ou gêne après la pénétration vaginale",
+          "id": 5
+        }
+      ],
+      "reponses": null
+    },
+    {
+      "index": 15,
+      "sectionName": "Sensori-descriptive",
+      "libelle": "16 -  Durant le dernier mois, j’ai souffert d’un ou de plusieurs symptômes en plus …",
+      "propositions": [
+        {
+          "name": "Selles douloureuses",
+          "id": 1
+        },
+        {
+          "name": "Douleurs intestinales",
+          "id": 2
+        },
+        {
+          "name": "Difficultés pour uriner",
+          "id": 3
+        },
+        {
+          "name": "Douleurs pour uriner",
+          "id": 4
+        },
+        {
+          "name": "Diarrhées",
+          "id": 5
+        },
+        {
+          "name": "Constipation",
+          "id": 6
+        },
+        {
+          "name": "Douleurs à la vessie",
+          "id": 7
+        },
+        {
+          "name": "Aucune douleur",
+          "id": 8
+        },
+        {
+          "name": "Autre",
+          "id": 9
+        }
+      ],
+      "reponses": null
+    },
+    {
+      "index": 28,
+      "sectionName": "Affectivo-émotionnelle",
+      "libelle": "29 - Globalement, au cours du dernier mois je me suis sentie ",
+      "propositions": [
+        {
+          "name": "Enthousiaste",
+          "id": 1
+        },
+        {
+          "name": "Joyeuse",
+          "id": 2
+        },
+        {
+          "name": "Entourée",
+          "id": 3
+        },
+        {
+          "name": "Nerveuse",
+          "id": 4
+        },
+        {
+          "name": "Maussade",
+          "id": 5
+        },
+        {
+          "name": "Frustrée",
+          "id": 6
+        },
+        {
+          "name": "Triste",
+          "id": 7
+        },
+        {
+          "name": "En colère",
+          "id": 8
+        },
+        {
+          "name": "Seule",
+          "id": 9
+        },
+        {
+          "name": "Aucun des adjectifs ne me conviens",
+          "id": 10
+        },
+        {
+          "name": "Autre",
+          "id": 11
+        }
+      ],
+      "reponses": null
+    }
+  ],
+  "questionDependante": [
+    {
+      "index": 1,
+      "sectionName": "Préambule profils des répondantes",
+      "libelle": "2 - J’ai été diagnostiquée de l’endométriose ?",
+      "propositionDependante": [
+        {
+          "proposition": "oui",
+          "questionsLies": [
+            {
+              "question": "Depuis combien de temps ?",
+              "reponse": ""
+            }
+          ]
+        },
+        {
+          "proposition": "non",
+          "questionsLies": []
+        }
+      ],
+      "reponse": null
+    }
+  ],
+  "questionUnique": [
+    {
+      "index": 2,
+      "sectionName": "Préambule profils des répondantes",
+      "libelle": "3 - Je considère que mon parcours diagnostic a été pénible ",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Pas du tout"
+        },
+        {
+          "lettre": "B",
+          "label": "Plutôt non"
+        },
+        {
+          "lettre": "C",
+          "label": "Neutre"
+        },
+        {
+          "lettre": "D",
+          "label": "Plutôt oui"
+        },
+        {
+          "lettre": "E",
+          "label": "Tout à fait"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 3,
+      "sectionName": "Préambule profils des répondantes",
+      "libelle": "4 - De quel type d’endométriose je souffre ?",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Aucune"
+        },
+        {
+          "lettre": "B",
+          "label": "Orificielle"
+        },
+        {
+          "lettre": "C",
+          "label": "Profonde"
+        },
+        {
+          "lettre": "D",
+          "label": "Ovarienne"
+        },
+        {
+          "lettre": "D",
+          "label": "Autre"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 5,
+      "sectionName": "Préambule profils des répondantes",
+      "libelle": "6 - Quel est l’impact de la maladie ou des symptômes sur mon quotidien ?",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Pas d’impact"
+        },
+        {
+          "lettre": "B",
+          "label": "Peu d’impact"
+        },
+        {
+          "lettre": "C",
+          "label": "Moyennement impacté"
+        },
+        {
+          "lettre": "D",
+          "label": "Handicapant"
+        },
+        {
+          "lettre": "E",
+          "label": "Très handicapant"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 6,
+      "sectionName": "Sensori-descriptive",
+      "libelle": "7 - Je décrirais les douleurs liées à mon cycle menstruel comme...",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Pas ressenties"
+        },
+        {
+          "lettre": "B",
+          "label": "Peu ressenties"
+        },
+        {
+          "lettre": "C",
+          "label": "Moyennement ressenties"
+        },
+        {
+          "lettre": "D",
+          "label": "Intenses"
+        },
+        {
+          "lettre": "E",
+          "label": "Très Intenses"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 8,
+      "sectionName": "Sensori-descriptive",
+      "libelle": "9 - En termes d’intensité, je dirais que les douleurs ressenties sont...",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Absentes"
+        },
+        {
+          "lettre": "B",
+          "label": "Peu présentes"
+        },
+        {
+          "lettre": "C",
+          "label": "Moyennement présentes"
+        },
+        {
+          "lettre": "D",
+          "label": "Intenses"
+        },
+        {
+          "lettre": "E",
+          "label": "Insupportables"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 10,
+      "sectionName": "Sensori-descriptive",
+      "libelle": "11 - Je souffre lors de mes règles",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Jamais"
+        },
+        {
+          "lettre": "B",
+          "label": "Quelques jours avant"
+        },
+        {
+          "lettre": "C",
+          "label": "Quelques jours après"
+        },
+        {
+          "lettre": "D",
+          "label": "Constamment"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 13,
+      "sectionName": "Sensori-descriptive",
+      "libelle": "14 - L’endométriose me gêne lors des rapports sexuels. (perturbe, empêche ou interrompt)",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Jamais"
+        },
+        {
+          "lettre": "B",
+          "label": "Rarement"
+        },
+        {
+          "lettre": "C",
+          "label": "Souvent"
+        },
+        {
+          "lettre": "D",
+          "label": "Régulièrement"
+        },
+        {
+          "lettre": "E",
+          "label": "Toujours"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 17,
+      "sectionName": "Affectivo-émotionnelle",
+      "libelle": "18 - Au cours du dernier mois : \n\nJe me suis sentie anxieuse ou déprimée  ",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Jamais"
+        },
+        {
+          "lettre": "B",
+          "label": "Rarement"
+        },
+        {
+          "lettre": "C",
+          "label": "Souvent"
+        },
+        {
+          "lettre": "D",
+          "label": "Régulièrement"
+        },
+        {
+          "lettre": "E",
+          "label": "Toujours"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 18,
+      "sectionName": "Affectivo-émotionnelle",
+      "libelle": "19 - J’ai été de bonne humeur",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Jamais"
+        },
+        {
+          "lettre": "B",
+          "label": "Rarement"
+        },
+        {
+          "lettre": "C",
+          "label": "Souvent"
+        },
+        {
+          "lettre": "D",
+          "label": "Régulièrement"
+        },
+        {
+          "lettre": "E",
+          "label": "Toujours"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 19,
+      "sectionName": "Affectivo-émotionnelle",
+      "libelle": "20 - J’ai eu l’impression de fonctionner au ralenti",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Jamais"
+        },
+        {
+          "lettre": "B",
+          "label": "Rarement"
+        },
+        {
+          "lettre": "C",
+          "label": "Souvent"
+        },
+        {
+          "lettre": "D",
+          "label": "Régulièrement"
+        },
+        {
+          "lettre": "E",
+          "label": "Toujours"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 20,
+      "sectionName": "Affectivo-émotionnelle",
+      "libelle": "21 - Je me suis sentie triste",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Jamais"
+        },
+        {
+          "lettre": "B",
+          "label": "Rarement"
+        },
+        {
+          "lettre": "C",
+          "label": "Souvent"
+        },
+        {
+          "lettre": "D",
+          "label": "Régulièrement"
+        },
+        {
+          "lettre": "E",
+          "label": "Toujours"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 21,
+      "sectionName": "Affectivo-émotionnelle",
+      "libelle": "22 - J’ai eu des sensations de peur ou j’ai l’estomac noué",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Jamais"
+        },
+        {
+          "lettre": "B",
+          "label": "Rarement"
+        },
+        {
+          "lettre": "C",
+          "label": "Souvent"
+        },
+        {
+          "lettre": "D",
+          "label": "Régulièrement"
+        },
+        {
+          "lettre": "E",
+          "label": "Toujours"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 22,
+      "sectionName": "Affectivo-émotionnelle",
+      "libelle": "23 - J’ai fait attention à mon apparence",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Plus du tout"
+        },
+        {
+          "lettre": "B",
+          "label": "Pas autant que je voudrais/devrais"
+        },
+        {
+          "lettre": "C",
+          "label": "Autant qu’avant"
+        },
+        {
+          "lettre": "D",
+          "label": "Plus qu'avant"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 23,
+      "sectionName": "Affectivo-émotionnelle",
+      "libelle": "24 -  Je me suis sentie en colère",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Jamais"
+        },
+        {
+          "lettre": "B",
+          "label": "Rarement"
+        },
+        {
+          "lettre": "C",
+          "label": "Souvent"
+        },
+        {
+          "lettre": "D",
+          "label": "Régulièrement"
+        },
+        {
+          "lettre": "E",
+          "label": "Tous les jours"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 24,
+      "sectionName": "Affectivo-émotionnelle",
+      "libelle": "25 - Depuis que l’on m’a diagnostiqué de l’endométriose, à quelle fréquence je me fais du souci",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Jamais"
+        },
+        {
+          "lettre": "B",
+          "label": "Rarement"
+        },
+        {
+          "lettre": "C",
+          "label": "Souvent"
+        },
+        {
+          "lettre": "D",
+          "label": "Régulièrement"
+        },
+        {
+          "lettre": "E",
+          "label": "Toujours"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 25,
+      "sectionName": "Affectivo-émotionnelle",
+      "libelle": "26 - Au vu des symptômes avec lesquels je vis (si je n'ai pas été diagnostiqué), à quelle fréquence je me fais du souci ?",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Jamais"
+        },
+        {
+          "lettre": "B",
+          "label": "Rarement"
+        },
+        {
+          "lettre": "C",
+          "label": "Souvent"
+        },
+        {
+          "lettre": "D",
+          "label": "Régulièrement"
+        },
+        {
+          "lettre": "E",
+          "label": "Toujours"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 26,
+      "sectionName": "Affectivo-émotionnelle",
+      "libelle": "27 - Concernant mes symptômes, je me sens comprise : Par mes médecins ?",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Pas du tout"
+        },
+        {
+          "lettre": "B",
+          "label": "Plutôt non"
+        },
+        {
+          "lettre": "C",
+          "label": "Neutre"
+        },
+        {
+          "lettre": "D",
+          "label": "Plutôt oui"
+        },
+        {
+          "lettre": "E",
+          "label": "Tout à fait"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 27,
+      "sectionName": "Affectivo-émotionnelle",
+      "libelle": "28 - Concernant mes symptômes, je me sens comprise: Par mon entourage",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Pas du tout"
+        },
+        {
+          "lettre": "B",
+          "label": "Plutôt non"
+        },
+        {
+          "lettre": "C",
+          "label": "Neutre"
+        },
+        {
+          "lettre": "D",
+          "label": "Plutôt oui"
+        },
+        {
+          "lettre": "E",
+          "label": "Tout à fait"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 29,
+      "sectionName": "Cognitive",
+      "libelle": "30 - Dans le cas de douleurs liées à mon endométriose ou mes règles, je prends des médicaments avant l’apparition des symptômes ?",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Jamais"
+        },
+        {
+          "lettre": "B",
+          "label": "Rarement"
+        },
+        {
+          "lettre": "C",
+          "label": "Souvent"
+        },
+        {
+          "lettre": "D",
+          "label": "Régulièrement"
+        },
+        {
+          "lettre": "E",
+          "label": "Toujours"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 30,
+      "sectionName": "Cognitive",
+      "libelle": "31 - Au cours des 6 derniers mois, je me suis sentie inquiète à l’idée d’avoir des rapports sexuels à cause de la douleur",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Jamais"
+        },
+        {
+          "lettre": "B",
+          "label": "Rarement"
+        },
+        {
+          "lettre": "C",
+          "label": "Souvent"
+        },
+        {
+          "lettre": "D",
+          "label": "Régulièrement"
+        },
+        {
+          "lettre": "E",
+          "label": "Toujours"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 31,
+      "sectionName": "Cognitive",
+      "libelle": "32 -J’organise mon quotidien ou mon travail en fonction de la douleur",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Jamais"
+        },
+        {
+          "lettre": "B",
+          "label": "Rarement"
+        },
+        {
+          "lettre": "C",
+          "label": "Souvent"
+        },
+        {
+          "lettre": "D",
+          "label": "Régulièrement"
+        },
+        {
+          "lettre": "E",
+          "label": "Toujours"
+        }
+      ],
+      "reponse": null
+    },
+    {
+      "index": 32,
+      "sectionName": "Cognitive",
+      "libelle": "33 - Je dirais que la maladie ou les symptômes de l'endométriose ont un impact sur mon apparence",
+      "propositions": [
+        {
+          "lettre": "A",
+          "label": "Pas du tout"
+        },
+        {
+          "lettre": "B",
+          "label": "Plutôt non"
+        },
+        {
+          "lettre": "C",
+          "label": "Neutre"
+        },
+        {
+          "lettre": "D",
+          "label": "Plutôt oui"
+        },
+        {
+          "lettre": "E",
+          "label": "Tout à fait"
+        }
+      ],
+      "reponse": null
+    }
+  ],
+  "questionCorp": [
+    {
+      "index": 0,
+      "sectionName": "Sensori-descriptive",
+      "libelle": "10 - Sur le schéma ci-contre pouvez-vous appuyer sur les zones du corps où vous souffrez.",
+      "reponse": ""
+    }
+  ],
+  "questionRange": [
+    {
+      "index": 4,
+      "sectionName": "Préambule profils des répondantes",
+      "libelle": "5 - Si je n'ai pas été diagnostiqué, depuis combien de temps je souffre de symptômes proches de l’endométriose ?",
+      "min": 0,
+      "max": 7,
+      "step": 1,
+      "labels": [
+        {
+          "label": "0 an",
+          "value": 0
+        },
+        {
+          "label": "+7 ans",
+          "value": 7
+        }
+      ],
+      "reponseMin": 0,
+      "reponseMax": 0
+    },
+    {
+      "index": 11,
+      "sectionName": "Sensori-descriptive",
+      "libelle": "12 - Comment évaluerais-je la pire douleur ressentie au quotidien ?",
+      "min": -1,
+      "max": 10,
+      "step": 1,
+      "labels": [],
+      "reponseMin": 0,
+      "reponseMax": 0
+    },
+    {
+      "index": 12,
+      "sectionName": "Sensori-descriptive",
+      "libelle": "13 - Comment évaluerais-je la pire douleur ressentie pendant mes règles ?",
+      "min": -1,
+      "max": 10,
+      "step": 1,
+      "labels": [],
+      "reponseMin": 0,
+      "reponseMax": 0
+    },
+    {
+      "index": 16,
+      "sectionName": "Sensori-descriptive",
+      "libelle": "17 - Durant le dernier mois, en jours cumulé j’ai souffert … ?",
+      "min": 0,
+      "max": 30,
+      "step": 5,
+      "labels": [
+        {
+          "label": "0j",
+          "value": 0
+        },
+        {
+          "label": "15j",
+          "value": 15
+        },
+        {
+          "label": "30j",
+          "value": 30
+        }
+      ],
+      "reponseMin": 0,
+      "reponseMax": 0
+    },
+    {
+      "index": 33,
+      "sectionName": "Cognitive",
+      "libelle": "34 - Quel est mon niveau de confiance en soi (0 à 10)?",
+      "min": -1,
+      "max": 10,
+      "step": 1,
+      "labels": [
+        {
+          "label": "Aucune confiance",
+          "value": 0
+        },
+        {
+          "label": "pleine confiance",
+          "value": 10
+        }
+      ],
+      "reponseMin": 0,
+      "reponseMax": 0
+    }
+  ],
+  "questionLibre": [],
+  "questionBinaire": [],
+  "questionValeurParDefaut": []
+}

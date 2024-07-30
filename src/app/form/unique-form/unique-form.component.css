@@ -1,0 +1,39 @@
+ul {
+  margin-top: 2vh;
+}
+
+li {
+  margin-bottom: 2vh;
+  padding: 8px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+li:hover {
+  background-color: rgba(253, 88, 50, 0.42);
+}
+
+.selected {
+  background-color: rgba(253, 88, 50, 0.42);
+}
+
+.letter {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+@media screen and (max-width: 500px){
+  li {
+    text-align: unset !important;
+  }
+}
+

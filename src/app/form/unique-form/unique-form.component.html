@@ -1,0 +1,26 @@
+<div class="unique-div">
+  <div *ngIf="survey && currentQuestionIndex >= 0">
+    <h3>{{ survey.questionUnique[getCurrentQuestionIndexUnique()].libelle }}</h3>
+    <ul>
+      <li (click)="handleItemClick(proposition.label)"
+          *ngFor="let proposition of survey.questionUnique[getCurrentQuestionIndexUnique()].propositions; let i = index"
+          [ngClass]="{'selected': survey.questionUnique[getCurrentQuestionIndexUnique()].reponse === proposition.label}">
+        <label>
+          <input [(ngModel)]="survey.questionUnique[getCurrentQuestionIndexUnique()].reponse"
+                 [value]="proposition.label"
+                 name="{{ survey.questionUnique[getCurrentQuestionIndexUnique()].libelle }}" type="radio">
+          <span class="letter">{{ String.fromCharCode(65 + i) }}</span>
+          {{ proposition.label }}
+        </label>
+      </li>
+    </ul>
+  </div>
+
+  <div class="button-nav">
+    <button (click)="goToPreviousQuestion()" [disabled]="currentQuestionIndex<=0" class="previousButton" type="button">
+      Précédent
+    </button>
+    <button (click)="goToNextQuestion()" class="nextButton" type="button">Suivant</button>
+  </div>
+</div>
+

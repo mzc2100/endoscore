@@ -1,0 +1,44 @@
+.container-form {
+  width: 80%;
+  margin: 5.5vh auto; /* Pour centrer le formulaire horizontalement */
+}
+
+body {
+  display: block;
+  background-color: red;
+}
+
+mat-card {
+  margin-top: 20px;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+
+.body-register {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+
+.progress-bar {
+  margin: 2vh 0 8vh 0;
+}
+
+
+.home-link {
+  color: var(--primary-color);
+}
+
+.home-link:hover {
+  color: #FA7254;;
+}
+
+.dataSurvey {
+  & li {
+    text-align: center;
+    padding-top: 10px;
+    list-style: none;
+  }
+}

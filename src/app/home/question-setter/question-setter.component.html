@@ -1,0 +1,25 @@
+<div style="display: flex; height: 100vh;">
+  <!-- First half of the screen -->
+  <div style="flex: 1;">
+    <ul>
+      <li *ngFor="let questionType of questionTypes">
+        <h3>{{ surveyService.getTitle(questionType) }}</h3>
+        <ul>
+          <li (dragover)="onDragOver($event)" (dragstart)="onDragStart($event, question.index)"
+              (drop)="onDrop($event, question.index)"
+              *ngFor="let question of survey[questionType]" class="white-back"
+              draggable="true">
+            <h1 class="black-index">{{ question.index }}</h1>
+            <div>{{ question.libelle }}</div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- Second half of the screen -->
+  <div style="flex: 1; overflow: auto; padding: 30px;">
+    <textarea style="width: 100%; height: 100%;">{{ this.surveyService.getGeneratedJSON()}}</textarea>
+  </div>
+
+</div>
+

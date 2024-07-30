@@ -1,0 +1,99 @@
+<div class="disclaimer">
+  <mat-icon class="warning-icon">warning</mat-icon>
+  <p>Ces résultats sont à titre non contractuel et démonstratif et ne sont pas réels.</p>
+</div>
+<div class="chart-result">
+  <div id="chart">
+    <mat-card>
+      <h1>{{this.profil}}</h1>
+      <mat-tab-group (selectedIndexChange)="selectedTabIndex = $event" [selectedIndex]="selectedTabIndex"
+                     animationDuration="1000ms" color="warn" dynamicHeight fitInkBarToContent mat-stretch-tabs>
+
+        <mat-tab label="Resultat">
+          <apx-chart
+            [chart]="chartOptions.chart!"
+            [dataLabels]="chartOptions.dataLabels!"
+            [fill]="chartOptions.fill!"
+            [markers]="chartOptions.markers!"
+            [plotOptions]="chartOptions.plotOptions!"
+            [responsive]="chartOptions.responsive!"
+            [series]="chartOptions.series!"
+            [stroke]="chartOptions.stroke!"
+            [title]="chartOptions.title!"
+            [tooltip]="chartOptions.tooltip!"
+            [xaxis]="chartOptions.xaxis!"
+            [yaxis]="chartOptions.yaxis!"
+          ></apx-chart>
+        </mat-tab>
+
+
+        <mat-tab label="Conseil">
+
+          <div class="recommendation">
+            <h2>Recommandation générale</h2>
+            <p style="padding-top: 10px;">Se rapprocher d'un centre spécialisé dans la douleur chronique listé dans l'annuaire ci-dessous.</p>  
+          </div>
+
+          <br>
+          <div class="annuaire">
+
+            <h2>Annuaire</h2>
+            <mat-form-field appearance="outline">
+              <mat-label>Sélectionner une région</mat-label>
+              <mat-select [(ngModel)]="selectedRegion" (ngModelChange)="onRegionChange($event)" >
+                <mat-option *ngFor="let region of regions" [value]="region">
+                  {{region.code}} - {{ region.nom.length > 20 ? (region.nom | slice:0:20) + '...' : region.nom }}
+                </mat-option>
+
+              </mat-select>
+            </mat-form-field>
+            <br>
+            <div *ngIf="!selectedRegion">
+              <ul>
+                <li>Saisir une region pour voir les medecins associé</li>
+              </ul>
+            </div>
+
+            <div *ngIf="selectedRegion" class="left-align">
+
+              <!-- <div *ngIf="doctorsForRegion">
+                <h3 style="text-align: center;">Médecins pour la région: {{ selectedRegion.nom }}</h3>
+                <ul class="ul ">
+                  <li *ngFor="let doctor of doctorsForRegion">
+                    <h3>{{ doctor.name }}</h3>
+                    <p>Contact: {{ doctor.contact }}</p>
+                  </li>
+                </ul>
+              </div> 
+            
+            <div *ngIf="doctorsForRegion.length < 1">
+                <p>Aucun médecin n'a été trouvé pour la région {{ selectedRegion }}</p>
+              </div>
+            -->
+
+              <div *ngIf="hospitalsForRegion">
+                <h3 style="text-align: center;">Structures douleurs chroniques pour la région: {{ selectedRegion.nom }}</h3>
+                <ul class="ul ">
+                  <li *ngFor="let hospital of hospitalsForRegion">
+                    <h3>{{ hospital.name }}</h3>
+                    <p id="address">Adresse: {{ hospital.contact }}</p>
+                    <p id="comments">{{hospital.comment}}</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div *ngIf="hospitalsForRegion.length < 1">
+                <p style="text-align: center;">Aucun hôpital n'a été trouvé pour la région {{ selectedRegion.nom }}</p>
+              </div>
+            </div>
+          </div>
+
+        </mat-tab>
+      </mat-tab-group>
+
+    </mat-card>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,19 @@
+.google-card-containter{
+
+    position:relative;
+    border: var(--thin-border);
+    border-radius: 5px;
+    padding: 11px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    img{
+        position: absolute;
+        width: 30px;
+        top: 50%;
+        left: 2%;
+        transform: translateY(-50%);
+        
+   }
+}

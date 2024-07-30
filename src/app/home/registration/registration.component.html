@@ -1,0 +1,67 @@
+<div class="register-container">
+    <div [formGroup]="registerForm" class="register-form">
+
+      <p class="title">Register</p>
+
+      <mat-form-field class="form-field" appearance="outline">
+        <input formControlName="username" matInput class="mat-input" placeholder="Username" name="username" />
+    
+        <mat-error *ngIf="registerForm.controls['username'].hasError('required')">
+            Username is Required
+        </mat-error>
+
+        <mat-error *ngIf="registerForm.controls['username'].hasError('email')">
+            Invalid email
+        </mat-error>
+
+    </mat-form-field>
+      
+      <mat-form-field class="form-field" appearance="outline">
+        <input matInput [type]="hide ? 'password' : 'text'" class="mat-input" placeholder="Password" formControlName="password" />
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+
+
+        <mat-error *ngIf="registerForm.controls['password'].hasError('required')">
+            Password is required
+        </mat-error>
+
+      </mat-form-field>
+
+
+      <mat-form-field class="form-field" appearance="outline">
+        <input matInput [type]="hideConfirm ? 'password' : 'text'" class="mat-input" placeholder="Confirm Password" formControlName="confirmPassword" />
+        <mat-icon matSuffix (click)="hideConfirm = !hideConfirm">{{hideConfirm ? 'visibility' : 'visibility_off'}}</mat-icon>
+
+        <mat-error *ngIf="registerForm.controls['confirmPassword'].hasError('required')">
+            Please confirm password
+        </mat-error>
+
+      </mat-form-field>
+      
+      <mat-form-field class="form-field" appearance="outline">
+        <input formControlName="phoneNumber" matInput class="mat-input" placeholder="Phone Number" name="phoneNumber" />
+    
+        <mat-error *ngIf="registerForm.controls['phoneNumber'].hasError('required')">
+            Phone Number is Required
+        </mat-error>
+
+    </mat-form-field>
+
+
+
+      <button mat-stroked-button color="primary">Sign Up</button>
+      
+      <p class="sign-up">Already have an account?<span [routerLink]="['/login']" > Log in</span></p>
+
+      <div class="or-line">
+        <p> Or </p>
+      </div>
+
+      <div class="google-card">
+        <app-google-login-card>
+
+        </app-google-login-card>
+      </div>
+    </div>
+  </div>
+  
